@@ -1,9 +1,11 @@
 import React from "react";
 
+const parameters: string = "";
+
 const Header = () => {
   return (
     <div className="py-6">
-      <div className="container text-white flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24">
+      <div className="container text-white flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24-w-full sticky top-0">
         <div className="text-lg">Daniel Khamzen</div>
         <div className="hidden md:flex space-x-12 items-center">
           <a href="" className="text-textPurple">

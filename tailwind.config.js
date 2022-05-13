@@ -4,7 +4,8 @@ module.exports = {
     extend: {
       colors: {
         body: "#121212",
-        textPurple: "#b429f9",
+        bgSurface: "#1d1d1d",
+        textPurple: "#bb86fc",
       },
       fontFamily: {
         poppins: ["Poppins"],
