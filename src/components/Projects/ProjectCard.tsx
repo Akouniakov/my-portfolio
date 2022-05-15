@@ -1,13 +1,14 @@
 import React from "react";
 
 interface ProjectCardProps {
-  projectName: string;
+  projectName?: string;
   image?: string;
   githubUrl?: string;
+  description?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = (props) => {
-  return <div className="">{props.projectName}</div>;
+  return <div className="container"></div>;
 };
 
 export default ProjectCard;
