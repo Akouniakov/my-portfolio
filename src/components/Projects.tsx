@@ -10,7 +10,7 @@ const Projects = () => {
   // mx-auto  : center un container
   // GRID PROJECTS
   return (
-    <div className="container bg-bgSurface rounded-xl  mx-auto">
+    <div className="container bg-bgSurface1 rounded-xl  mx-auto">
       <section>
         <div className="flex justify-center">
           <h1 className="my-6 text-2xl">Mes projets</h1>
@@ -21,6 +21,7 @@ const Projects = () => {
             projectName="API : User"
             image={logoNest}
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a. "
+            tags={[{ name: "TypeScript", color: "" }]}
           />
           <ProjectCard
             projectName="API : User"
