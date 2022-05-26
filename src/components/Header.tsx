@@ -11,9 +11,9 @@ const Header = () => {
           <a href="" className="text-textPurple">
             Home
           </a>
-          <a href="">Présentation</a>
-          <a href="">Projets</a>
-          <a href="">Contact</a>
+          <a href="#">Présentation</a>
+          <a href="#">Projets</a>
+          <a href="#">Contact</a>
         </div>
         <div className="md:hidden">
           <svg

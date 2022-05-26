@@ -23,8 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
     border-solid
     bg-gradient-to-tr
     from-[#4158D0]
-    via-[#C850C0]
-    to-[#FFCC70]
+    to-[#C850C0]
     rounded-xl"
     >
       <div className="m-0.5 flex-col bg-bgSurface1 rounded-xl ">

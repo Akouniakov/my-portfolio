@@ -12,30 +12,24 @@ const Projects = () => {
   // mx-auto  : center un container
   // GRID PROJECTS
   return (
-    <div className="container rounded-xl  mx-auto">
+    <div className="container mx-auto  rounded-xl">
       <section>
-        <div className="flex justify-center">
+        <div className="flex">
           <h1 className="my-6 text-2xl">Mes projets</h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  ">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <ProjectCard
-            projectName="API : User"
+            projectName="Pets Shelter"
             image={TechnoImage.NestJS}
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a. "
             tags={[{ name: "TypeScript", color: TechnoColor.TypeScript }]}
           />
           <ProjectCard
-            projectName="BDD : User"
-            image={TechnoImage.PostgreSQL}
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a. "
-            tags={[{ name: "SQL", color: TechnoColor.Sql }]}
-          />
-          <ProjectCard
-            projectName="Docker : User"
-            image={TechnoImage.Docker}
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a. "
-            tags={[{ name: "YAML", color: TechnoColor.Yaml }]}
+            projectName="Portfolio"
+            image={TechnoImage.React}
+            description="Mon site portfolio"
+            tags={[{ name: "TypeScript", color: TechnoColor.TypeScript }]}
           />
         </div>
       </section>
