@@ -1,6 +1,6 @@
 import React from "react";
 
-const Presentation = () => {
+const Presentation: React.FC = () => {
   return (
     <div className="container mx-auto">
       <h1>Présentation :</h1>
