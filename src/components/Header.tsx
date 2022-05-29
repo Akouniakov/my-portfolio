@@ -5,9 +5,9 @@ const parameters: string = "";
 const Header = () => {
   return (
     <div className="py-6">
-      <div className="container text-white flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24-w-full sticky top-0">
+      <div className="lg:px-24-w-full container sticky top-0 mx-auto flex items-center justify-between px-8 text-white md:px-14">
         <div className="text-lg">Daniel Khamzen</div>
-        <div className="hidden md:flex space-x-12 items-center">
+        <div className="hidden items-center space-x-12 md:flex">
           <a href="" className="text-textPurple">
             Home
           </a>
