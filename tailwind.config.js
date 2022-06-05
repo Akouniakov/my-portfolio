@@ -5,7 +5,7 @@ module.exports = {
       colors: {
         body: "#121212",
         bgSurface1: "#1d1d1d",
-        bgSurface2: "#3e3d40",
+        bgSurface2: "#21262e",
         bgSurface3: "#313133",
         textPurple: "#bb86fc",
       },

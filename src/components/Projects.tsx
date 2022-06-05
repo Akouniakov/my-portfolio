@@ -12,7 +12,7 @@ const Projects = () => {
   // mx-auto  : center un container
   // GRID PROJECTS
   return (
-    <div className="container mx-auto  rounded-xl">
+    <div className="lg:px-24-w-full container mx-auto items-center justify-between px-8 md:px-14">
       <section>
         <div className="flex">
           <h1 className="my-6 text-2xl">Mes projets</h1>
