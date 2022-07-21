@@ -1,51 +1,35 @@
 import React from "react";
-
-import { TechnoImage } from "../helper/TechnoImage";
+import Divider from "./shared/Divider";
 
 interface ProjectCardProps {
-  projectName?: string;
-  image?: string;
+  projectName: string;
+  image: string;
+  color: string;
   githubUrl?: string;
-  description?: string;
-  tags?: tag[];
+  description: string;
 }
 
-type tag = {
-  name: string;
-  color: string;
-};
-
-const ProjectCard: React.FC<ProjectCardProps> = (props) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  projectName,
+  image,
+  color,
+  githubUrl,
+  description,
+}) => {
+  console.log(color);
   return (
-    <div
-      className="
-    container
-    border-solid
-    bg-gradient-to-tr
-    from-[#4158D0]
-    to-[#C850C0]
-    rounded-xl"
-    >
-      <div className="m-0.5 flex-col bg-bgSurface1 rounded-xl ">
-        <div className="flex flex-row p-4 items-center space-x-4 justify-between">
-          <img
-            className="object-contain h-10 w-10"
-            src={props.image}
-            alt="technologie logo"
-          />
-          <h2>{props.projectName}</h2>
-          {props.tags?.map((x) => (
-            <div
-              className={`uppercase text-xs px-2 bg-blue-400 ${x.color} rounded-lg`}
-            >
-              {x.name}
-            </div>
-          ))}
-        </div>
-        <p className="px-4">{props.description}</p>
-        <div className="flex flex-row p-4">
-          <button className="bg-white rounded-lg w-max">Github</button>
-        </div>
+    <div className={`rounded-xl border-b-2 border-[${color}]`}>
+      <div className="flex flex-col items-center rounded-xl bg-bgSurface1">
+        <img
+          className="my-3 h-10 w-10 object-contain"
+          src={image}
+          alt="technologie logo"
+        />
+
+        <Divider color={color} />
+        <h2 className="my-3">{projectName}</h2>
+        <p className="mx-3">{description}</p>
+        <button className="mx-3 rounded-lg bg-white">Github</button>
       </div>
     </div>
   );
