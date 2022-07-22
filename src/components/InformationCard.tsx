@@ -30,7 +30,6 @@ const InformationCard: React.FC<Props> = ({
           <path d={path} />
         </svg>
       </div>
-
       <h1>{description}</h1>
     </div>
   );
